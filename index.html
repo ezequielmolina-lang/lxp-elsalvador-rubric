@@ -292,6 +292,9 @@ function sevChip(s) {
 
 function renderSummary() {
   const tb = document.getElementById('summary-tbody');
+  // Build a quick lookup of domain code -> full name from the domains list
+  const nameById = {};
+  (DATA.domains || []).forEach(d => { nameById[d.id] = d.name; });
   let totalMax = 0, totalIHFB = 0, totalKira = 0;
   const rows = DATA.scoring_summary.map(r => {
     const max = parseFloat(r.pts_max) || 0;
@@ -304,8 +307,11 @@ function renderSummary() {
     const ipct = max ? (ihfb/max*100).toFixed(1) + '%' : '—';
     const kpct = max ? (kira/max*100).toFixed(1) + '%' : '—';
     const isTotal = r.domain === 'TOTAL';
+    const domainLabel = isTotal
+      ? 'TOTAL'
+      : `<span class="font-mono text-xs text-slate-500 mr-2">${r.domain}</span><span>${r.domain_name || nameById[r.domain] || ''}</span>`;
     return `<tr class="${isTotal ? 'font-bold bg-slate-50' : ''}">
-      <td class="px-3 py-2">${r.domain}</td>
+      <td class="px-3 py-2">${domainLabel}</td>
       <td class="px-3 py-2 text-right">${max.toFixed(1)}</td>
       <td class="px-3 py-2 text-right">${ihfb.toFixed(1)}</td>
       <td class="px-3 py-2 text-right">${kira.toFixed(1)}</td>
