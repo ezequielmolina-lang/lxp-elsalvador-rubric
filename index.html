@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rúbrica LXP El Salvador 2026 · v7.4 · Banco Mundial</title>
+<meta name="description" content="Marco de evaluación para Plataformas LXP — 14 dominios, 98 celdas, 3 plataformas (IHFB · Kira · Grok). Banco Mundial, Equipo Educación LAC." />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: #faf8f3; }
+  .chip { display:inline-block; padding:1px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: .02em; }
+  .chip-pass { background:#dcfce7; color:#166534; }
+  .chip-partial { background:#fef3c7; color:#92400e; }
+  .chip-fail { background:#fee2e2; color:#991b1b; }
+  .chip-na { background:#e5e7eb; color:#4b5563; }
+  .chip-nt { background:#dbeafe; color:#1e40af; }
+  .chip-crit { background:#7c2d12; color:#fff; }
+  .chip-alta { background:#b45309; color:#fff; }
+  .chip-media { background:#65a30d; color:#fff; }
+  .chip-baja { background:#94a3b8; color:#fff; }
+  details > summary { cursor: pointer; list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] > summary .twirl { transform: rotate(90deg); }
+  .twirl { transition: transform .12s ease; }
+  pre.evidence { white-space: pre-wrap; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; color: #334155; }
+  .anchor-link { opacity: 0; transition: opacity .2s; }
+  div.cell:hover .anchor-link { opacity: 1; }
+  .domain-D1 { border-color: #fb923c; }
+  .domain-D2 { border-color: #f472b6; }
+  .domain-D3 { border-color: #818cf8; }
+  .domain-D4 { border-color: #34d399; }
+  .domain-D5 { border-color: #facc15; }
+  .domain-D6 { border-color: #60a5fa; }
+  .domain-D7 { border-color: #f87171; }
+  .domain-D8 { border-color: #a78bfa; }
+  .domain-D9 { border-color: #fb7185; }
+  .domain-D10 { border-color: #2dd4bf; }
+  .domain-D11 { border-color: #c084fc; }
+  .domain-D12 { border-color: #fbbf24; }
+  .domain-D13 { border-color: #4ade80; }
+  .domain-D14 { border-color: #0ea5e9; }
+</style>
+</head>
+<body class="text-slate-800">
+
+<header class="bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+  <div class="max-w-6xl mx-auto px-6 py-10">
+    <div class="flex items-start justify-between gap-6">
+      <div>
+        <div class="text-xs uppercase tracking-widest text-amber-300 mb-2">Banco Mundial · Equipo Educación LAC</div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Rúbrica LXP El Salvador 2026</h1>
+        <div class="mt-3 text-lg text-slate-300">Marco de evaluación de plataformas LXP / Tutores con IA · v7.4 — 14 dominios · 98 celdas · 3 plataformas</div>
+      </div>
+      <div class="hidden md:flex flex-col items-end text-sm text-slate-300">
+        <div>Procurement-grade</div>
+        <div class="text-xs">Threshold 60/116 (≥60%)</div>
+      </div>
+    </div>
+    <div class="mt-6 flex flex-wrap gap-3 text-sm">
+      <a href="#summary" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">Score Summary</a>
+      <a href="#domains" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">14 Dominios</a>
+      <a href="#cells" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">98 Celdas</a>
+      <a href="#prefilter" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">Pre-filter UNICEF/ESSA</a>
+      <a href="#disqualifiers" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">Disqualifiers</a>
+      <a href="#sources" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">Fuentes del marco</a>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-6 py-10 space-y-12">
+
+<section>
+  <h2 class="text-2xl font-bold mb-3">¿Qué estás viendo?</h2>
+  <p class="text-slate-700 leading-relaxed">
+    Esta es la rúbrica completa que el equipo del Banco Mundial usó para evaluar tres plataformas LXP propuestas
+    para despliegue nacional en El Salvador en 2026: <strong>IHFB</strong> (origen Corea, donado por la cooperación coreana),
+    <strong>Kira Learning</strong> (Andrew Ng + Anthropic), y <strong>Grok</strong> (xAI, en negociación con el gobierno).
+    Cada una de las 98 celdas se evaluó con criterios PASS / PARTIAL / FAIL / N/A respaldados por evidencia trazable.
+    Para el reporte completo de hallazgos, ver el <a href="#report-link" class="text-blue-700 underline">PDF del Assessment</a>.
+  </p>
+</section>
+
+<section id="summary">
+  <h2 class="text-2xl font-bold mb-4">Score summary por dominio</h2>
+  <div class="overflow-x-auto bg-white rounded-lg shadow-sm border border-slate-200">
+    <table class="w-full text-sm">
+      <thead class="bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
+        <tr>
+          <th class="px-3 py-2 text-left">Dominio</th>
+          <th class="px-3 py-2 text-right">Pts máx</th>
+          <th class="px-3 py-2 text-right">IHFB</th>
+          <th class="px-3 py-2 text-right">Kira</th>
+          <th class="px-3 py-2 text-right">Grok</th>
+          <th class="px-3 py-2 text-right">IHFB %</th>
+          <th class="px-3 py-2 text-right">Kira %</th>
+        </tr>
+      </thead>
+      <tbody id="summary-tbody" class="divide-y divide-slate-100"></tbody>
+    </table>
+  </div>
+</section>
+
+<section id="domains">
+  <h2 class="text-2xl font-bold mb-4">Los 14 dominios — anclajes en la literatura</h2>
+  <div id="domain-grid" class="grid md:grid-cols-2 gap-3"></div>
+</section>
+
+<section id="cells">
+  <h2 class="text-2xl font-bold mb-4">Las 98 celdas — explorador interactivo</h2>
+
+  <div class="bg-white rounded-lg border border-slate-200 p-4 mb-4">
+    <div class="grid md:grid-cols-12 gap-3 items-end">
+      <div class="md:col-span-4">
+        <label class="text-xs uppercase tracking-wide text-slate-500">Buscar</label>
+        <input id="search" type="text" placeholder="ID, texto, evidencia..." class="w-full mt-1 px-3 py-2 border border-slate-300 rounded text-sm" />
+      </div>
+      <div class="md:col-span-3">
+        <label class="text-xs uppercase tracking-wide text-slate-500">Dominio</label>
+        <select id="filter-domain" class="w-full mt-1 px-3 py-2 border border-slate-300 rounded text-sm bg-white">
+          <option value="">Todos los dominios</option>
+        </select>
+      </div>
+      <div class="md:col-span-2">
+        <label class="text-xs uppercase tracking-wide text-slate-500">Severidad</label>
+        <select id="filter-severity" class="w-full mt-1 px-3 py-2 border border-slate-300 rounded text-sm bg-white">
+          <option value="">Todas</option>
+          <option value="CRITICA">CRÍTICA</option>
+          <option value="ALTA">ALTA</option>
+          <option value="MEDIA">MEDIA</option>
+          <option value="BAJA">BAJA</option>
+        </select>
+      </div>
+      <div class="md:col-span-3">
+        <label class="text-xs uppercase tracking-wide text-slate-500">Plataforma + status</label>
+        <div class="flex gap-1 mt-1">
+          <select id="filter-platform" class="flex-1 px-2 py-2 border border-slate-300 rounded text-sm bg-white">
+            <option value="">Cualquier plataforma</option>
+            <option value="IHFB">IHFB</option>
+            <option value="Kira">Kira</option>
+            <option value="Grok">Grok</option>
+          </select>
+          <select id="filter-status" class="flex-1 px-2 py-2 border border-slate-300 rounded text-sm bg-white">
+            <option value="">Cualquier status</option>
+            <option value="PASS">PASS</option>
+            <option value="PARTIAL">PARTIAL</option>
+            <option value="FAIL">FAIL</option>
+            <option value="N/A">N/A</option>
+            <option value="NOT_TESTED">NOT TESTED</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="mt-3 text-xs text-slate-500"><span id="match-count">98</span> celdas coinciden con los filtros. Click en una celda para expandir criterios PASS/FAIL.</div>
+  </div>
+
+  <div id="cells-list" class="space-y-2"></div>
+</section>
+
+<section id="prefilter">
+  <h2 class="text-2xl font-bold mb-4">Pre-filter UNICEF + ESSA</h2>
+  <p class="text-slate-700 mb-3 text-sm">Criterios eliminatorios aplicados ANTES de los 8 disqualifiers. Si una plataforma falla ≥1, no es elegible para procurement nacional bajo el umbral del Banco Mundial.</p>
+  <div class="overflow-x-auto bg-white rounded-lg border border-slate-200">
+    <table class="w-full text-sm">
+      <thead class="bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
+        <tr>
+          <th class="px-3 py-2 text-left">ID</th>
+          <th class="px-3 py-2 text-left">Criterio</th>
+          <th class="px-3 py-2 text-left">Evidencia</th>
+          <th class="px-3 py-2 text-center">IHFB</th>
+          <th class="px-3 py-2 text-center">Kira</th>
+          <th class="px-3 py-2 text-center">Grok</th>
+        </tr>
+      </thead>
+      <tbody id="prefilter-tbody" class="divide-y divide-slate-100"></tbody>
+    </table>
+  </div>
+</section>
+
+<section id="disqualifiers">
+  <h2 class="text-2xl font-bold mb-4">8 Disqualifiers</h2>
+  <p class="text-slate-700 mb-3 text-sm">Failurs binarios que descalifican una plataforma para despliegue, independiente del score agregado.</p>
+  <div class="overflow-x-auto bg-white rounded-lg border border-slate-200">
+    <table class="w-full text-sm">
+      <thead class="bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
+        <tr>
+          <th class="px-3 py-2 text-left">ID</th>
+          <th class="px-3 py-2 text-left">Disqualifier</th>
+          <th class="px-3 py-2 text-center">Severidad</th>
+          <th class="px-3 py-2 text-center">IHFB</th>
+          <th class="px-3 py-2 text-center">Kira</th>
+          <th class="px-3 py-2 text-center">Grok</th>
+        </tr>
+      </thead>
+      <tbody id="disq-tbody" class="divide-y divide-slate-100"></tbody>
+    </table>
+  </div>
+</section>
+
+<section id="sources">
+  <h2 class="text-2xl font-bold mb-4">Fuentes del marco</h2>
+  <div class="grid md:grid-cols-2 gap-4">
+    <div class="bg-white p-4 rounded-lg border border-slate-200">
+      <h3 class="font-semibold mb-2">5 marcos primarios</h3>
+      <ul class="text-sm space-y-1 text-slate-700">
+        <li>• <strong>GEEAP 2023 + 2024</strong> — Smart Buys / Promising Bets (Banco Mundial)</li>
+        <li>• <strong>Rosenshine 2012</strong> — Principles of Instruction (17 → 10 principios)</li>
+        <li>• <strong>ESSA Tier 1-4</strong> + WB AI Tutor 2024 — evidence hierarchy</li>
+        <li>• <strong>BEA (ACL 2024+2025)</strong> — MI / ML / AC / PG error-detection rubric</li>
+        <li>• <strong>Khan / IXL / ALEKS</strong> + VanLehn 2011 + Hwang & Tu 2021 — D14 Adaptive Software</li>
+      </ul>
+    </div>
+    <div class="bg-white p-4 rounded-lg border border-slate-200">
+      <h3 class="font-semibold mb-2">Instrumentos de pedagogía estructurada revisados para D5</h3>
+      <ul class="text-sm space-y-1 text-slate-700">
+        <li>• <strong>EGRA / EGMA</strong> (RTI 2009-2024)</li>
+        <li>• <strong>GPF</strong> Global Proficiency Framework (UIS / ACER / USAID 2019-2020)</li>
+        <li>• <strong>Tusome</strong> (Kenya, USAID 2014-2022) — RCT-evaluado</li>
+        <li>• <strong>Tayari</strong> (Kenya, EDC) — preparación pre-primaria</li>
+        <li>• <strong>EGRP-Liberia / PRIMR-Kenya / READ-Ghana</strong> — replicaciones</li>
+        <li>• <strong>Lectura para Todos</strong> (Perú/Honduras/RD, USAID 2019-2024) — adaptación L1-español</li>
+        <li>• <strong>Aprendamos Todos a Leer</strong> (LAC 2023-2025)</li>
+      </ul>
+    </div>
+    <div class="bg-white p-4 rounded-lg border border-slate-200">
+      <h3 class="font-semibold mb-2">Fuentes secundarias (selección)</h3>
+      <ul class="text-sm space-y-1 text-slate-700">
+        <li>Sweller (1988, 2019) · Mayer (2024) · Roediger & Karpicke (2006, 2017)</li>
+        <li>Cepeda et al (2006) · Dunlosky et al (2013) · Rohrer et al (2015)</li>
+        <li>Bloom (1968, 1984) · Black & Wiliam (1998, 2009) · Wiliam (2011)</li>
+        <li>Stockard DI meta-analysis (2018) · Joyce & Showers (1980, 2002)</li>
+        <li>VanLehn (2011) · Hwang & Tu (2021) · Holmes et al (2022)</li>
+        <li>Chi & Wylie ICAP (2014) · Bjork & Bjork (2011) · Castles, Rastle, Nation (2018)</li>
+      </ul>
+    </div>
+    <div class="bg-white p-4 rounded-lg border border-slate-200">
+      <h3 class="font-semibold mb-2">Cuerpos normativos</h3>
+      <ul class="text-sm space-y-1 text-slate-700">
+        <li>• NCME / AERA / APA Standards (2014)</li>
+        <li>• OECD AI Principles (2019, 2024)</li>
+        <li>• UNESCO Guidance for generative AI in education (2023)</li>
+        <li>• W3C WCAG 2.1</li>
+        <li>• NIST AI Risk Management Framework (RMF 1.0, 2023)</li>
+        <li>• Anthropic Responsible Scaling Policy (2024)</li>
+        <li>• LEPINA El Salvador · Línea 132 PNC · Línea 134 ISNA</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="report-link" class="bg-amber-50 border-l-4 border-amber-400 p-6 rounded">
+  <h3 class="font-semibold text-amber-900 mb-1">¿Necesitas el Assessment completo?</h3>
+  <p class="text-sm text-amber-900">
+    Esta página es una referencia interactiva de la rúbrica. El <strong>Assessment PDF</strong> tiene el análisis completo
+    (hallazgos por plataforma, evidencia trazable, screenshots, retracción v5.4 sobre Grade 1, probe battery, LLM-as-judge reliability).
+    Disponible en español e inglés en el repositorio
+    <a href="https://github.com/ezequielmolina-lang/lxp-elsalvador-rubric/" class="underline">lxp-elsalvador-rubric</a>.
+  </p>
+</section>
+
+</main>
+
+<footer class="bg-slate-900 text-slate-400 text-sm py-8">
+  <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center gap-3">
+    <div>Banco Mundial · Equipo Educación LAC · 2026</div>
+    <div>Rúbrica v7.4 · <span id="cell-count-foot">98</span> celdas · <a href="rubric_v7_4.json" class="underline hover:text-white">Descargar JSON</a> · <a href="https://github.com/ezequielmolina-lang/lxp-elsalvador-rubric" class="underline hover:text-white">Repo GitHub</a></div>
+  </div>
+</footer>
+
+<script>
+let DATA = null;
+
+function statusChip(s) {
+  if (!s) return '<span class="chip chip-na">—</span>';
+  const u = String(s).toUpperCase();
+  if (u === 'PASS') return '<span class="chip chip-pass">PASS</span>';
+  if (u === 'PARTIAL') return '<span class="chip chip-partial">PARTIAL</span>';
+  if (u === 'FAIL') return '<span class="chip chip-fail">FAIL</span>';
+  if (u.includes('N/A') || u === 'NA') return '<span class="chip chip-na">N/A</span>';
+  if (u === 'NOT_TESTED' || u === 'NOT TESTED') return '<span class="chip chip-nt">NOT TESTED</span>';
+  return '<span class="chip chip-na">' + s + '</span>';
+}
+
+function sevChip(s) {
+  if (!s) return '';
+  const u = String(s).toUpperCase();
+  if (u.includes('CRIT')) return '<span class="chip chip-crit">CRÍTICA</span>';
+  if (u.includes('ALTA')) return '<span class="chip chip-alta">ALTA</span>';
+  if (u.includes('MEDIA')) return '<span class="chip chip-media">MEDIA</span>';
+  if (u.includes('BAJA')) return '<span class="chip chip-baja">BAJA</span>';
+  return '<span class="chip chip-na">' + s + '</span>';
+}
+
+function renderSummary() {
+  const tb = document.getElementById('summary-tbody');
+  let totalMax = 0, totalIHFB = 0, totalKira = 0;
+  const rows = DATA.scoring_summary.map(r => {
+    const max = parseFloat(r.pts_max) || 0;
+    const ihfb = parseFloat(r.IHFB) || 0;
+    const kira = parseFloat(r.Kira) || 0;
+    const grok = r.Grok && !isNaN(parseFloat(r.Grok)) ? parseFloat(r.Grok) : null;
+    if (r.domain !== 'TOTAL') {
+      totalMax += max; totalIHFB += ihfb; totalKira += kira;
+    }
+    const ipct = max ? (ihfb/max*100).toFixed(1) + '%' : '—';
+    const kpct = max ? (kira/max*100).toFixed(1) + '%' : '—';
+    const isTotal = r.domain === 'TOTAL';
+    return `<tr class="${isTotal ? 'font-bold bg-slate-50' : ''}">
+      <td class="px-3 py-2">${r.domain}</td>
+      <td class="px-3 py-2 text-right">${max.toFixed(1)}</td>
+      <td class="px-3 py-2 text-right">${ihfb.toFixed(1)}</td>
+      <td class="px-3 py-2 text-right">${kira.toFixed(1)}</td>
+      <td class="px-3 py-2 text-right text-slate-500">${grok != null ? grok.toFixed(1) : 'n/t'}</td>
+      <td class="px-3 py-2 text-right">${ipct}</td>
+      <td class="px-3 py-2 text-right">${kpct}</td>
+    </tr>`;
+  }).join('');
+  tb.innerHTML = rows;
+}
+
+function renderDomains() {
+  const grid = document.getElementById('domain-grid');
+  grid.innerHTML = DATA.domains.map(d => {
+    const cellCount = DATA.cells.filter(c => c.domain === d.id).length;
+    return `<a href="#${d.id}" data-domain="${d.id}" class="domain-card bg-white rounded-lg border-l-4 domain-${d.id} border-slate-200 p-4 hover:shadow transition cursor-pointer">
+      <div class="flex items-baseline justify-between mb-1">
+        <div class="text-xs uppercase tracking-wide text-slate-500">${d.id} · ${cellCount} celdas</div>
+        <div class="text-sm font-semibold text-slate-700">${d.max_pts.toFixed(1)} pts</div>
+      </div>
+      <div class="font-semibold leading-tight">${d.name}</div>
+      <div class="text-xs text-slate-500 mt-1">Fuente: ${d.primary_source}</div>
+    </a>`;
+  }).join('');
+  // Wire domain cards as filter shortcuts
+  document.querySelectorAll('.domain-card').forEach(c => {
+    c.addEventListener('click', e => {
+      e.preventDefault();
+      const dom = c.dataset.domain;
+      document.getElementById('filter-domain').value = dom;
+      applyFilters();
+      document.getElementById('cells').scrollIntoView({behavior: 'smooth'});
+    });
+  });
+  // populate domain filter
+  const ds = document.getElementById('filter-domain');
+  DATA.domains.forEach(d => {
+    const opt = document.createElement('option');
+    opt.value = d.id; opt.textContent = `${d.id} — ${d.name}`;
+    ds.appendChild(opt);
+  });
+}
+
+function renderCells() {
+  const list = document.getElementById('cells-list');
+  const q = (document.getElementById('search').value || '').toLowerCase().trim();
+  const fDom = document.getElementById('filter-domain').value;
+  const fSev = document.getElementById('filter-severity').value;
+  const fPlat = document.getElementById('filter-platform').value;
+  const fStat = document.getElementById('filter-status').value;
+  let matches = DATA.cells.filter(c => {
+    if (fDom && c.domain !== fDom) return false;
+    if (fSev && !String(c.severity || '').toUpperCase().includes(fSev)) return false;
+    if (fPlat && fStat) {
+      const p = c.platforms[fPlat];
+      if (!p || String(p.status || '').toUpperCase() !== fStat) return false;
+    } else if (fPlat) {
+      if (!c.platforms[fPlat]) return false;
+    } else if (fStat) {
+      const any = ['IHFB','Kira','Grok'].some(p =>
+        c.platforms[p] && String(c.platforms[p].status||'').toUpperCase() === fStat);
+      if (!any) return false;
+    }
+    if (q) {
+      const hay = [c.test_id, c.test, c.evidence_source, c.steps, c.pass_criterion, c.fail_criterion]
+        .filter(Boolean).join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  document.getElementById('match-count').textContent = matches.length;
+  list.innerHTML = matches.map(c => cellHtml(c)).join('');
+}
+
+function cellHtml(c) {
+  const p = c.platforms || {};
+  const ihfb = p.IHFB || {}; const kira = p.Kira || {}; const grok = p.Grok || {};
+  const ptsObt = (x) => (x && x.pts_obtained != null) ? Number(x.pts_obtained).toFixed(1) : '—';
+  return `<details class="cell bg-white rounded-lg border border-slate-200 hover:border-slate-300" id="${c.test_id}">
+    <summary class="px-4 py-3 flex items-start gap-3">
+      <span class="twirl text-slate-400 mt-1">▶</span>
+      <div class="flex-1 min-w-0">
+        <div class="flex flex-wrap items-baseline gap-2">
+          <span class="font-mono text-xs text-slate-500">${c.test_id}</span>
+          ${sevChip(c.severity)}
+          <span class="text-xs text-slate-500">${c.pts_max} pts máx · ${c.domain}</span>
+          <a href="#${c.test_id}" class="anchor-link text-xs text-blue-600 ml-auto">#permalink</a>
+        </div>
+        <div class="font-semibold mt-1 leading-snug">${c.test || ''}</div>
+        <div class="flex flex-wrap gap-2 mt-2 text-xs">
+          <span><strong>IHFB</strong> ${statusChip(ihfb.status)} <span class="text-slate-500">${ptsObt(ihfb)}/${c.pts_max}</span></span>
+          <span class="text-slate-300">·</span>
+          <span><strong>Kira</strong> ${statusChip(kira.status)} <span class="text-slate-500">${ptsObt(kira)}/${c.pts_max}</span></span>
+          <span class="text-slate-300">·</span>
+          <span><strong>Grok</strong> ${statusChip(grok.status)} <span class="text-slate-500">${ptsObt(grok)}/${c.pts_max}</span></span>
+        </div>
+      </div>
+    </summary>
+    <div class="px-4 pb-4 pt-1 border-t border-slate-100">
+      <div class="grid md:grid-cols-2 gap-4 mt-3 text-sm">
+        <div>
+          <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Evidencia / fuente</div>
+          <div>${c.evidence_source || '—'}</div>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Pasos del test</div>
+          <div>${c.steps || '—'}</div>
+        </div>
+        <div class="bg-green-50 p-3 rounded border border-green-100">
+          <div class="text-xs uppercase tracking-wide text-green-700 mb-1">Criterio PASS</div>
+          <div class="text-green-900">${c.pass_criterion || '—'}</div>
+        </div>
+        <div class="bg-red-50 p-3 rounded border border-red-100">
+          <div class="text-xs uppercase tracking-wide text-red-700 mb-1">Criterio FAIL</div>
+          <div class="text-red-900">${c.fail_criterion || '—'}</div>
+        </div>
+      </div>
+      ${(ihfb.evidence_notes || kira.evidence_notes || grok.evidence_notes) ? `
+      <div class="mt-3">
+        <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Notas de evidencia</div>
+        <div class="space-y-1.5 text-xs">
+          ${ihfb.evidence_notes ? `<div><strong>IHFB:</strong> ${ihfb.evidence_notes}</div>` : ''}
+          ${kira.evidence_notes ? `<div><strong>Kira:</strong> ${kira.evidence_notes}</div>` : ''}
+          ${grok.evidence_notes ? `<div><strong>Grok:</strong> ${grok.evidence_notes}</div>` : ''}
+        </div>
+      </div>
+      ` : ''}
+    </div>
+  </details>`;
+}
+
+function renderPrefilter() {
+  const tb = document.getElementById('prefilter-tbody');
+  tb.innerHTML = DATA.pre_filter.map(r => `<tr>
+    <td class="px-3 py-2 font-mono text-xs">${r.id || ''}</td>
+    <td class="px-3 py-2">${r.criterion || ''}</td>
+    <td class="px-3 py-2 text-slate-500 text-xs">${r.evidence || ''}</td>
+    <td class="px-3 py-2 text-center">${statusChip(r.IHFB)}</td>
+    <td class="px-3 py-2 text-center">${statusChip(r.Kira)}</td>
+    <td class="px-3 py-2 text-center">${statusChip(r.Grok)}</td>
+  </tr>`).join('');
+}
+
+function renderDisqualifiers() {
+  const tb = document.getElementById('disq-tbody');
+  tb.innerHTML = DATA.disqualifiers.map(r => `<tr>
+    <td class="px-3 py-2 font-mono text-xs">${r.id || ''}</td>
+    <td class="px-3 py-2">${r.disqualifier || ''}</td>
+    <td class="px-3 py-2 text-center">${sevChip(r.severity)}</td>
+    <td class="px-3 py-2 text-center">${statusChip(r.IHFB)}</td>
+    <td class="px-3 py-2 text-center">${statusChip(r.Kira)}</td>
+    <td class="px-3 py-2 text-center">${statusChip(r.Grok)}</td>
+  </tr>`).join('');
+}
+
+function applyFilters() { renderCells(); }
+
+async function init() {
+  const r = await fetch('rubric_v7_4.json');
+  DATA = await r.json();
+  document.getElementById('cell-count-foot').textContent = DATA.cells.length;
+  renderSummary();
+  renderDomains();
+  renderCells();
+  renderPrefilter();
+  renderDisqualifiers();
+
+  ['search','filter-domain','filter-severity','filter-platform','filter-status'].forEach(id => {
+    document.getElementById(id).addEventListener('input', applyFilters);
+    document.getElementById(id).addEventListener('change', applyFilters);
+  });
+
+  // Open deep-linked cell if URL hash matches a test ID
+  if (location.hash.startsWith('#PT-')) {
+    const tid = location.hash.slice(1);
+    setTimeout(() => {
+      const el = document.getElementById(tid);
+      if (el) { el.open = true; el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    }, 200);
+  }
+}
+
+init();
+</script>
+
+</body>
+</html>
