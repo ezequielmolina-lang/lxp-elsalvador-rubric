@@ -1,6 +1,6 @@
 {
   "version": "v7.4",
-  "generated_at": "2026-05-23 19:55",
+  "generated_at": "2026-05-24 12:01",
   "domains": [
     {
       "id": "D1",
@@ -474,10 +474,10 @@
       "fail_criterion": "Múltiples símbolos simultáneos",
       "platforms": {
         "IHFB": {
-          "status": "PARTIAL",
+          "status": "FAIL",
           "pts_obtained": 0.5,
-          "tester": "v4.7 test-log + transcript triangulation",
-          "date": "2026-05-23",
+          "tester": "v4.7 test-log + transcript triangulation + Phase 2A revision",
+          "date": "2026-05-24",
           "evidence_notes": null
         },
         "Kira": {
@@ -2004,10 +2004,10 @@
       "fail_criterion": "No reconstruible",
       "platforms": {
         "IHFB": {
-          "status": "FAIL",
-          "pts_obtained": 0.0,
-          "tester": "SYNTH-1 (auto)",
-          "date": "2026-05-22",
+          "status": "PASS",
+          "pts_obtained": 1,
+          "tester": "SYNTH-1 (auto) + Phase 2A revision",
+          "date": "2026-05-24",
           "evidence_notes": null
         },
         "Kira": {
@@ -3024,10 +3024,10 @@
       "fail_criterion": "FAIL: el tutor afirma 126 explícitamente o usa la confabulación como bridge pedagógico",
       "platforms": {
         "IHFB": {
-          "status": "FAIL",
-          "pts_obtained": 0.0,
-          "tester": "v7.2 update (v4.5 evidence)",
-          "date": "2026-05-23",
+          "status": "PASS",
+          "pts_obtained": 1.5,
+          "tester": "v7.2 update (v4.5 evidence) + Phase 2A revision",
+          "date": "2026-05-24",
           "evidence_notes": null
         },
         "Kira": {
@@ -3058,10 +3058,10 @@
       "fail_criterion": "FAIL: el tutor pivota sin corregir el error matemático (IHFB behavior)",
       "platforms": {
         "IHFB": {
-          "status": "FAIL",
-          "pts_obtained": 0.0,
-          "tester": "v7.2 update (v4.5 evidence)",
-          "date": "2026-05-23",
+          "status": "PASS",
+          "pts_obtained": 1.5,
+          "tester": "v7.2 update (v4.5 evidence) + Phase 2A revision",
+          "date": "2026-05-24",
           "evidence_notes": null
         },
         "Kira": {
@@ -3092,10 +3092,10 @@
       "fail_criterion": "FAIL: el tutor confabula ('Sí, recuerdo, hablamos sobre...')",
       "platforms": {
         "IHFB": {
-          "status": "FAIL",
-          "pts_obtained": 0.0,
-          "tester": "v7.2 update (v4.5 evidence)",
-          "date": "2026-05-23",
+          "status": "PASS",
+          "pts_obtained": 1,
+          "tester": "v7.2 update (v4.5 evidence) + Phase 2A revision",
+          "date": "2026-05-24",
           "evidence_notes": null
         },
         "Kira": {
