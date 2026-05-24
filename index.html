@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Rúbrica LXP El Salvador 2026 · v7.4 · Banco Mundial</title>
-<meta name="description" content="Marco de evaluación para Plataformas LXP — 14 dominios, 98 celdas, 3 plataformas (IHFB · Kira · Grok). Banco Mundial, Equipo Educación LAC." />
+<title>LXP El Salvador 2026 Rubric · v7.4 · World Bank</title>
+<meta name="description" content="Evaluation framework for LXP platforms — 14 domains, 98 cells, 3 platforms (IHFB · Kira · Grok). World Bank, LAC Education Team." />
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
   body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: #faf8f3; }
@@ -47,9 +47,9 @@
   <div class="max-w-6xl mx-auto px-6 py-10">
     <div class="flex items-start justify-between gap-6">
       <div>
-        <div class="text-xs uppercase tracking-widest text-amber-300 mb-2">Banco Mundial · Equipo Educación LAC</div>
-        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Rúbrica LXP El Salvador 2026</h1>
-        <div class="mt-3 text-lg text-slate-300">Marco de evaluación de plataformas LXP / Tutores con IA · v7.4 — 14 dominios · 98 celdas · 3 plataformas</div>
+        <div class="text-xs uppercase tracking-widest text-amber-300 mb-2">World Bank · LAC Education Team</div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">LXP El Salvador 2026 Rubric</h1>
+        <div class="mt-3 text-lg text-slate-300">Evaluation framework for LXP / AI-tutor platforms · v7.4 — 14 domains · 98 cells · 3 platforms</div>
       </div>
       <div class="hidden md:flex flex-col items-end text-sm text-slate-300">
         <div>Procurement-grade</div>
@@ -58,11 +58,11 @@
     </div>
     <div class="mt-6 flex flex-wrap gap-3 text-sm">
       <a href="#summary" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">Score Summary</a>
-      <a href="#domains" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">14 Dominios</a>
-      <a href="#cells" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">98 Celdas</a>
+      <a href="#domains" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">14 Domains</a>
+      <a href="#cells" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">98 Cells</a>
       <a href="#prefilter" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">Pre-filter UNICEF/ESSA</a>
       <a href="#disqualifiers" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">Disqualifiers</a>
-      <a href="#sources" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">Fuentes del marco</a>
+      <a href="#sources" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded">Framework sources</a>
     </div>
   </div>
 </header>
@@ -70,24 +70,24 @@
 <main class="max-w-6xl mx-auto px-6 py-10 space-y-12">
 
 <section>
-  <h2 class="text-2xl font-bold mb-3">¿Qué estás viendo?</h2>
+  <h2 class="text-2xl font-bold mb-3">What you're looking at</h2>
   <p class="text-slate-700 leading-relaxed">
-    Esta es la rúbrica completa que el equipo del Banco Mundial usó para evaluar tres plataformas LXP propuestas
-    para despliegue nacional en El Salvador en 2026: <strong>IHFB</strong> (origen Corea, donado por la cooperación coreana),
-    <strong>Kira Learning</strong> (Andrew Ng + Anthropic), y <strong>Grok</strong> (xAI, en negociación con el gobierno).
-    Cada una de las 98 celdas se evaluó con criterios PASS / PARTIAL / FAIL / N/A respaldados por evidencia trazable.
-    Para el reporte completo de hallazgos, ver el <a href="#report-link" class="text-blue-700 underline">PDF del Assessment</a>.
+    This is the complete rubric the World Bank team used to evaluate three LXP platforms proposed
+    for national deployment in El Salvador in 2026: <strong>IHFB</strong> (Korean origin, donated by Korean cooperation),
+    <strong>Kira Learning</strong> (Andrew Ng + Anthropic), and <strong>Grok</strong> (xAI, under negotiation with the government).
+    Each of the 98 cells was evaluated with PASS / PARTIAL / FAIL / N/A criteria backed by traceable evidence.
+    For the full findings report, see the <a href="#report-link" class="text-blue-700 underline">Assessment PDF</a>.
   </p>
 </section>
 
 <section id="summary">
-  <h2 class="text-2xl font-bold mb-4">Score summary por dominio</h2>
+  <h2 class="text-2xl font-bold mb-4">Score summary by domain</h2>
   <div class="overflow-x-auto bg-white rounded-lg shadow-sm border border-slate-200">
     <table class="w-full text-sm">
       <thead class="bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
         <tr>
-          <th class="px-3 py-2 text-left">Dominio</th>
-          <th class="px-3 py-2 text-right">Pts máx</th>
+          <th class="px-3 py-2 text-left">Domain</th>
+          <th class="px-3 py-2 text-right">Max pts</th>
           <th class="px-3 py-2 text-right">IHFB</th>
           <th class="px-3 py-2 text-right">Kira</th>
           <th class="px-3 py-2 text-right">Grok</th>
@@ -101,46 +101,46 @@
 </section>
 
 <section id="domains">
-  <h2 class="text-2xl font-bold mb-4">Los 14 dominios — anclajes en la literatura</h2>
+  <h2 class="text-2xl font-bold mb-4">The 14 domains — anchored in the literature</h2>
   <div id="domain-grid" class="grid md:grid-cols-2 gap-3"></div>
 </section>
 
 <section id="cells">
-  <h2 class="text-2xl font-bold mb-4">Las 98 celdas — explorador interactivo</h2>
+  <h2 class="text-2xl font-bold mb-4">The 98 cells — interactive browser</h2>
 
   <div class="bg-white rounded-lg border border-slate-200 p-4 mb-4">
     <div class="grid md:grid-cols-12 gap-3 items-end">
       <div class="md:col-span-4">
-        <label class="text-xs uppercase tracking-wide text-slate-500">Buscar</label>
-        <input id="search" type="text" placeholder="ID, texto, evidencia..." class="w-full mt-1 px-3 py-2 border border-slate-300 rounded text-sm" />
+        <label class="text-xs uppercase tracking-wide text-slate-500">Search</label>
+        <input id="search" type="text" placeholder="ID, text, evidence..." class="w-full mt-1 px-3 py-2 border border-slate-300 rounded text-sm" />
       </div>
       <div class="md:col-span-3">
-        <label class="text-xs uppercase tracking-wide text-slate-500">Dominio</label>
+        <label class="text-xs uppercase tracking-wide text-slate-500">Domain</label>
         <select id="filter-domain" class="w-full mt-1 px-3 py-2 border border-slate-300 rounded text-sm bg-white">
-          <option value="">Todos los dominios</option>
+          <option value="">All domains</option>
         </select>
       </div>
       <div class="md:col-span-2">
-        <label class="text-xs uppercase tracking-wide text-slate-500">Severidad</label>
+        <label class="text-xs uppercase tracking-wide text-slate-500">Severity</label>
         <select id="filter-severity" class="w-full mt-1 px-3 py-2 border border-slate-300 rounded text-sm bg-white">
-          <option value="">Todas</option>
-          <option value="CRITICA">CRÍTICA</option>
-          <option value="ALTA">ALTA</option>
-          <option value="MEDIA">MEDIA</option>
-          <option value="BAJA">BAJA</option>
+          <option value="">All</option>
+          <option value="CRITICA">CRITICAL</option>
+          <option value="ALTA">HIGH</option>
+          <option value="MEDIA">MEDIUM</option>
+          <option value="BAJA">LOW</option>
         </select>
       </div>
       <div class="md:col-span-3">
-        <label class="text-xs uppercase tracking-wide text-slate-500">Plataforma + status</label>
+        <label class="text-xs uppercase tracking-wide text-slate-500">Platform + status</label>
         <div class="flex gap-1 mt-1">
           <select id="filter-platform" class="flex-1 px-2 py-2 border border-slate-300 rounded text-sm bg-white">
-            <option value="">Cualquier plataforma</option>
+            <option value="">Any platform</option>
             <option value="IHFB">IHFB</option>
             <option value="Kira">Kira</option>
             <option value="Grok">Grok</option>
           </select>
           <select id="filter-status" class="flex-1 px-2 py-2 border border-slate-300 rounded text-sm bg-white">
-            <option value="">Cualquier status</option>
+            <option value="">Any status</option>
             <option value="PASS">PASS</option>
             <option value="PARTIAL">PARTIAL</option>
             <option value="FAIL">FAIL</option>
@@ -150,7 +150,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-3 text-xs text-slate-500"><span id="match-count">98</span> celdas coinciden con los filtros. Click en una celda para expandir criterios PASS/FAIL.</div>
+    <div class="mt-3 text-xs text-slate-500"><span id="match-count">98</span> cells match the filters. Click a cell to expand PASS/FAIL criteria.</div>
   </div>
 
   <div id="cells-list" class="space-y-2"></div>
@@ -158,14 +158,14 @@
 
 <section id="prefilter">
   <h2 class="text-2xl font-bold mb-4">Pre-filter UNICEF + ESSA</h2>
-  <p class="text-slate-700 mb-3 text-sm">Criterios eliminatorios aplicados ANTES de los 8 disqualifiers. Si una plataforma falla ≥1, no es elegible para procurement nacional bajo el umbral del Banco Mundial.</p>
+  <p class="text-slate-700 mb-3 text-sm">Eliminating criteria applied BEFORE the 8 disqualifiers. If a platform fails ≥1, it is not eligible for national procurement under the World Bank threshold.</p>
   <div class="overflow-x-auto bg-white rounded-lg border border-slate-200">
     <table class="w-full text-sm">
       <thead class="bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
         <tr>
           <th class="px-3 py-2 text-left">ID</th>
-          <th class="px-3 py-2 text-left">Criterio</th>
-          <th class="px-3 py-2 text-left">Evidencia</th>
+          <th class="px-3 py-2 text-left">Criterion</th>
+          <th class="px-3 py-2 text-left">Evidence</th>
           <th class="px-3 py-2 text-center">IHFB</th>
           <th class="px-3 py-2 text-center">Kira</th>
           <th class="px-3 py-2 text-center">Grok</th>
@@ -178,14 +178,14 @@
 
 <section id="disqualifiers">
   <h2 class="text-2xl font-bold mb-4">8 Disqualifiers</h2>
-  <p class="text-slate-700 mb-3 text-sm">Failurs binarios que descalifican una plataforma para despliegue, independiente del score agregado.</p>
+  <p class="text-slate-700 mb-3 text-sm">Binary failures that disqualify a platform for deployment, independent of the aggregate score.</p>
   <div class="overflow-x-auto bg-white rounded-lg border border-slate-200">
     <table class="w-full text-sm">
       <thead class="bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
         <tr>
           <th class="px-3 py-2 text-left">ID</th>
           <th class="px-3 py-2 text-left">Disqualifier</th>
-          <th class="px-3 py-2 text-center">Severidad</th>
+          <th class="px-3 py-2 text-center">Severity</th>
           <th class="px-3 py-2 text-center">IHFB</th>
           <th class="px-3 py-2 text-center">Kira</th>
           <th class="px-3 py-2 text-center">Grok</th>
@@ -197,32 +197,32 @@
 </section>
 
 <section id="sources">
-  <h2 class="text-2xl font-bold mb-4">Fuentes del marco</h2>
+  <h2 class="text-2xl font-bold mb-4">Framework sources</h2>
   <div class="grid md:grid-cols-2 gap-4">
     <div class="bg-white p-4 rounded-lg border border-slate-200">
-      <h3 class="font-semibold mb-2">5 marcos primarios</h3>
+      <h3 class="font-semibold mb-2">5 primary frameworks</h3>
       <ul class="text-sm space-y-1 text-slate-700">
-        <li>• <strong>GEEAP 2023 + 2024</strong> — Smart Buys / Promising Bets (Banco Mundial)</li>
-        <li>• <strong>Rosenshine 2012</strong> — Principles of Instruction (17 → 10 principios)</li>
+        <li>• <strong>GEEAP 2023 + 2024</strong> — Smart Buys / Promising Bets (World Bank)</li>
+        <li>• <strong>Rosenshine 2012</strong> — Principles of Instruction (17 → 10 principles)</li>
         <li>• <strong>ESSA Tier 1-4</strong> + WB AI Tutor 2024 — evidence hierarchy</li>
         <li>• <strong>BEA (ACL 2024+2025)</strong> — MI / ML / AC / PG error-detection rubric</li>
         <li>• <strong>Khan / IXL / ALEKS</strong> + VanLehn 2011 + Hwang & Tu 2021 — D14 Adaptive Software</li>
       </ul>
     </div>
     <div class="bg-white p-4 rounded-lg border border-slate-200">
-      <h3 class="font-semibold mb-2">Instrumentos de pedagogía estructurada revisados para D5</h3>
+      <h3 class="font-semibold mb-2">Structured-pedagogy instruments reviewed for D5</h3>
       <ul class="text-sm space-y-1 text-slate-700">
         <li>• <strong>EGRA / EGMA</strong> (RTI 2009-2024)</li>
         <li>• <strong>GPF</strong> Global Proficiency Framework (UIS / ACER / USAID 2019-2020)</li>
-        <li>• <strong>Tusome</strong> (Kenya, USAID 2014-2022) — RCT-evaluado</li>
-        <li>• <strong>Tayari</strong> (Kenya, EDC) — preparación pre-primaria</li>
-        <li>• <strong>EGRP-Liberia / PRIMR-Kenya / READ-Ghana</strong> — replicaciones</li>
-        <li>• <strong>Lectura para Todos</strong> (Perú/Honduras/RD, USAID 2019-2024) — adaptación L1-español</li>
+        <li>• <strong>Tusome</strong> (Kenya, USAID 2014-2022) — RCT-evaluated</li>
+        <li>• <strong>Tayari</strong> (Kenya, EDC) — pre-primary readiness</li>
+        <li>• <strong>EGRP-Liberia / PRIMR-Kenya / READ-Ghana</strong> — replications</li>
+        <li>• <strong>Lectura para Todos</strong> (Peru/Honduras/DR, USAID 2019-2024) — L1-Spanish adaptation</li>
         <li>• <strong>Aprendamos Todos a Leer</strong> (LAC 2023-2025)</li>
       </ul>
     </div>
     <div class="bg-white p-4 rounded-lg border border-slate-200">
-      <h3 class="font-semibold mb-2">Fuentes secundarias (selección)</h3>
+      <h3 class="font-semibold mb-2">Secondary sources (selection)</h3>
       <ul class="text-sm space-y-1 text-slate-700">
         <li>Sweller (1988, 2019) · Mayer (2024) · Roediger & Karpicke (2006, 2017)</li>
         <li>Cepeda et al (2006) · Dunlosky et al (2013) · Rohrer et al (2015)</li>
@@ -233,7 +233,7 @@
       </ul>
     </div>
     <div class="bg-white p-4 rounded-lg border border-slate-200">
-      <h3 class="font-semibold mb-2">Cuerpos normativos</h3>
+      <h3 class="font-semibold mb-2">Standards bodies</h3>
       <ul class="text-sm space-y-1 text-slate-700">
         <li>• NCME / AERA / APA Standards (2014)</li>
         <li>• OECD AI Principles (2019, 2024)</li>
@@ -248,11 +248,11 @@
 </section>
 
 <section id="report-link" class="bg-amber-50 border-l-4 border-amber-400 p-6 rounded">
-  <h3 class="font-semibold text-amber-900 mb-1">¿Necesitas el Assessment completo?</h3>
+  <h3 class="font-semibold text-amber-900 mb-1">Need the full Assessment?</h3>
   <p class="text-sm text-amber-900">
-    Esta página es una referencia interactiva de la rúbrica. El <strong>Assessment PDF</strong> tiene el análisis completo
-    (hallazgos por plataforma, evidencia trazable, screenshots, retracción v5.4 sobre Grade 1, probe battery, LLM-as-judge reliability).
-    Disponible en español e inglés en el repositorio
+    This page is an interactive reference of the rubric. The <strong>Assessment PDF</strong> has the full analysis
+    (platform-by-platform findings, traceable evidence, screenshots, v5.4 Grade 1 retraction, probe battery, LLM-as-judge reliability).
+    Available in Spanish and English in the repository
     <a href="https://github.com/ezequielmolina-lang/lxp-elsalvador-rubric/" class="underline">lxp-elsalvador-rubric</a>.
   </p>
 </section>
@@ -261,8 +261,8 @@
 
 <footer class="bg-slate-900 text-slate-400 text-sm py-8">
   <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center gap-3">
-    <div>Banco Mundial · Equipo Educación LAC · 2026</div>
-    <div>Rúbrica v7.4 · <span id="cell-count-foot">98</span> celdas · <a href="rubric_v7_4.json" class="underline hover:text-white">Descargar JSON</a> · <a href="https://github.com/ezequielmolina-lang/lxp-elsalvador-rubric" class="underline hover:text-white">Repo GitHub</a></div>
+    <div>World Bank · LAC Education Team · 2026</div>
+    <div>Rubric v7.4 · <span id="cell-count-foot">98</span> cells · <a href="rubric_v7_4.json" class="underline hover:text-white">Download JSON</a> · <a href="https://github.com/ezequielmolina-lang/lxp-elsalvador-rubric" class="underline hover:text-white">GitHub repo</a></div>
   </div>
 </footer>
 
@@ -283,10 +283,10 @@ function statusChip(s) {
 function sevChip(s) {
   if (!s) return '';
   const u = String(s).toUpperCase();
-  if (u.includes('CRIT')) return '<span class="chip chip-crit">CRÍTICA</span>';
-  if (u.includes('ALTA')) return '<span class="chip chip-alta">ALTA</span>';
-  if (u.includes('MEDIA')) return '<span class="chip chip-media">MEDIA</span>';
-  if (u.includes('BAJA')) return '<span class="chip chip-baja">BAJA</span>';
+  if (u.includes('CRIT')) return '<span class="chip chip-crit">CRITICAL</span>';
+  if (u.includes('ALTA')) return '<span class="chip chip-alta">HIGH</span>';
+  if (u.includes('MEDIA')) return '<span class="chip chip-media">MEDIUM</span>';
+  if (u.includes('BAJA')) return '<span class="chip chip-baja">LOW</span>';
   return '<span class="chip chip-na">' + s + '</span>';
 }
 
@@ -323,11 +323,11 @@ function renderDomains() {
     const cellCount = DATA.cells.filter(c => c.domain === d.id).length;
     return `<a href="#${d.id}" data-domain="${d.id}" class="domain-card bg-white rounded-lg border-l-4 domain-${d.id} border-slate-200 p-4 hover:shadow transition cursor-pointer">
       <div class="flex items-baseline justify-between mb-1">
-        <div class="text-xs uppercase tracking-wide text-slate-500">${d.id} · ${cellCount} celdas</div>
+        <div class="text-xs uppercase tracking-wide text-slate-500">${d.id} · ${cellCount} cells</div>
         <div class="text-sm font-semibold text-slate-700">${d.max_pts.toFixed(1)} pts</div>
       </div>
       <div class="font-semibold leading-tight">${d.name}</div>
-      <div class="text-xs text-slate-500 mt-1">Fuente: ${d.primary_source}</div>
+      <div class="text-xs text-slate-500 mt-1">Source: ${d.primary_source}</div>
     </a>`;
   }).join('');
   // Wire domain cards as filter shortcuts
@@ -391,7 +391,7 @@ function cellHtml(c) {
         <div class="flex flex-wrap items-baseline gap-2">
           <span class="font-mono text-xs text-slate-500">${c.test_id}</span>
           ${sevChip(c.severity)}
-          <span class="text-xs text-slate-500">${c.pts_max} pts máx · ${c.domain}</span>
+          <span class="text-xs text-slate-500">${c.pts_max} max pts · ${c.domain}</span>
           <a href="#${c.test_id}" class="anchor-link text-xs text-blue-600 ml-auto">#permalink</a>
         </div>
         <div class="font-semibold mt-1 leading-snug">${c.test || ''}</div>
@@ -407,25 +407,25 @@ function cellHtml(c) {
     <div class="px-4 pb-4 pt-1 border-t border-slate-100">
       <div class="grid md:grid-cols-2 gap-4 mt-3 text-sm">
         <div>
-          <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Evidencia / fuente</div>
+          <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Evidence / source</div>
           <div>${c.evidence_source || '—'}</div>
         </div>
         <div>
-          <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Pasos del test</div>
+          <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Test steps</div>
           <div>${c.steps || '—'}</div>
         </div>
         <div class="bg-green-50 p-3 rounded border border-green-100">
-          <div class="text-xs uppercase tracking-wide text-green-700 mb-1">Criterio PASS</div>
+          <div class="text-xs uppercase tracking-wide text-green-700 mb-1">PASS criterion</div>
           <div class="text-green-900">${c.pass_criterion || '—'}</div>
         </div>
         <div class="bg-red-50 p-3 rounded border border-red-100">
-          <div class="text-xs uppercase tracking-wide text-red-700 mb-1">Criterio FAIL</div>
+          <div class="text-xs uppercase tracking-wide text-red-700 mb-1">FAIL criterion</div>
           <div class="text-red-900">${c.fail_criterion || '—'}</div>
         </div>
       </div>
       ${(ihfb.evidence_notes || kira.evidence_notes || grok.evidence_notes) ? `
       <div class="mt-3">
-        <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Notas de evidencia</div>
+        <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Evidence notes</div>
         <div class="space-y-1.5 text-xs">
           ${ihfb.evidence_notes ? `<div><strong>IHFB:</strong> ${ihfb.evidence_notes}</div>` : ''}
           ${kira.evidence_notes ? `<div><strong>Kira:</strong> ${kira.evidence_notes}</div>` : ''}

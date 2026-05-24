@@ -1,6 +1,6 @@
 {
   "version": "v7.4",
-  "generated_at": "2026-05-24 12:01",
+  "generated_at": "2026-05-24 12:55",
   "domains": [
     {
       "id": "D1",
@@ -3374,102 +3374,124 @@
   ],
   "scoring_summary": [
     {
-      "domain": "D1. Explicit Instruction",
-      "pts_max": 12,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D1\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D1\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D1\")"
+      "domain": "D1",
+      "domain_name": "Gradual Release (I Do / We Do / You Do)",
+      "pts_max": 12.0,
+      "IHFB": 9.5,
+      "Kira": 10.5,
+      "Grok": null
     },
     {
-      "domain": "D2. Cognitive Load",
-      "pts_max": 8,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D2\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D2\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D2\")"
+      "domain": "D2",
+      "domain_name": "Cognitive Load Theory + multimedia design",
+      "pts_max": 8.0,
+      "IHFB": 6.5,
+      "Kira": 4.75,
+      "Grok": null
     },
     {
-      "domain": "D3. Retrieval/Spacing/Interleaving",
-      "pts_max": 12,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D3\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D3\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D3\")"
+      "domain": "D3",
+      "domain_name": "Retrieval practice + spaced + interleaving",
+      "pts_max": 12.0,
+      "IHFB": 5.25,
+      "Kira": 6.0,
+      "Grok": null
     },
     {
-      "domain": "D4. Feedback + Mastery + BEA 2025",
-      "pts_max": 10,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D4\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D4\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D4\")"
+      "domain": "D4",
+      "domain_name": "Formative assessment + mastery gating",
+      "pts_max": 10.0,
+      "IHFB": 4.25,
+      "Kira": 4.25,
+      "Grok": null
     },
     {
-      "domain": "D5. Misconceptions + BEA-ML",
-      "pts_max": 8,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D5\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D5\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D5\")"
+      "domain": "D5",
+      "domain_name": "Misconception tracking + refutational teaching + early-grade decoding",
+      "pts_max": 8.0,
+      "IHFB": 4.0,
+      "Kira": 3.75,
+      "Grok": null
     },
     {
-      "domain": "D6. Domain Knowledge + EdReports",
-      "pts_max": 8,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D6\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D6\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D6\")"
+      "domain": "D6",
+      "domain_name": "Curriculum coherence + EdReports criteria",
+      "pts_max": 8.0,
+      "IHFB": 5.0,
+      "Kira": 5.75,
+      "Grok": null
     },
     {
-      "domain": "D7. Structured Pedagogy + Docente",
-      "pts_max": 10,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D7\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D7\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D7\")"
+      "domain": "D7",
+      "domain_name": "Teacher in the loop + dashboards",
+      "pts_max": 11.0,
+      "IHFB": 6.5,
+      "Kira": 8.75,
+      "Grok": null
     },
     {
-      "domain": "D8. Subject-Specific + EdReports SoR",
-      "pts_max": 5,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D8\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D8\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D8\")"
+      "domain": "D8",
+      "domain_name": "Subject-specific pedagogy frameworks",
+      "pts_max": 5.0,
+      "IHFB": 1.25,
+      "Kira": 1.5,
+      "Grok": null
     },
     {
-      "domain": "D9. Personalization Trap",
-      "pts_max": 5,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D9\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D9\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D9\")"
+      "domain": "D9",
+      "domain_name": "Memory + confabulation resistance",
+      "pts_max": 10.0,
+      "IHFB": 7.25,
+      "Kira": 5.25,
+      "Grok": null
     },
     {
-      "domain": "D10. Auditability",
-      "pts_max": 4,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D10\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D10\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D10\")"
+      "domain": "D10",
+      "domain_name": "Roles, logs, latency, export",
+      "pts_max": 4.0,
+      "IHFB": 3.0,
+      "Kira": 2.25,
+      "Grok": null
     },
     {
-      "domain": "D11. Intended Use & Fidelity (NEW)",
-      "pts_max": 8,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D11\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D11\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D11\")"
+      "domain": "D11",
+      "domain_name": "Intended use specification + adaptation",
+      "pts_max": 8.0,
+      "IHFB": 5.5,
+      "Kira": 3.0,
+      "Grok": null
     },
     {
-      "domain": "D12. Evidence Rigor (NEW)",
-      "pts_max": 6,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D12\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D12\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D12\")"
+      "domain": "D12",
+      "domain_name": "Evidence quality (ESSA Tier 1-4)",
+      "pts_max": 6.0,
+      "IHFB": 0.0,
+      "Kira": 0.0,
+      "Grok": null
     },
     {
-      "domain": "D13. Teacher Training Audit (NEW)",
-      "pts_max": 4,
-      "IHFB": "=SUMIFS(Logging_IHFB!H:H, Logging_IHFB!B:B, \"D13\")",
-      "Kira": "=SUMIFS(Logging_Kira!H:H, Logging_Kira!B:B, \"D13\")",
-      "Grok": "=SUMIFS(Logging_Grok!H:H, Logging_Grok!B:B, \"D13\")"
+      "domain": "D13",
+      "domain_name": "Teacher training + ongoing PD",
+      "pts_max": 4.0,
+      "IHFB": 0.0,
+      "Kira": 2.5,
+      "Grok": null
+    },
+    {
+      "domain": "D14",
+      "domain_name": "Adaptive Software / Personalization",
+      "pts_max": 10.0,
+      "IHFB": 0.0,
+      "Kira": 4.25,
+      "Grok": null
     },
     {
       "domain": "TOTAL",
-      "pts_max": 100,
-      "IHFB": "=SUM(D4:D16)",
-      "Kira": "=SUM(E4:E16)",
-      "Grok": "=SUM(F4:F16)"
+      "domain_name": "TOTAL",
+      "pts_max": 116.0,
+      "IHFB": 58.0,
+      "Kira": 62.5,
+      "Grok": null
     }
   ],
   "pre_filter": [
