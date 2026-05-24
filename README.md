@@ -41,6 +41,6 @@ The full Assessment PDFs (Spanish + English, ~50 pages each) and the Evidence De
 
 Banco Mundial · Equipo Educación LAC · 2026.
 
-This rubric synthesizes 5 primary frameworks (GEEAP 2023+2024, Rosenshine 2012, ESSA Tier 1-4 + WB AI Tutor 2024, BEA shared task ACL 2024+2025, Khan/IXL/ALEKS adaptive-learning literature) and 18 secondary sources. The full source list is in section 1.1 of the Assessment PDF.
+This rubric synthesizes 5 primary frameworks (GEEAP 2023+2024, Rosenshine 2012, ESSA Tier 1-4 + WB EdTech series 2023-2024, BEA shared task ACL 2024+2025, Khan/IXL/ALEKS adaptive-learning literature) and 18 secondary sources. The full source list is in section 1.1 of the Assessment PDF.
 
 Independent reuse of the rubric for procurement evaluation in other LAC contexts is encouraged — please cite the World Bank LAC Education team and the rubric version (v7.4, May 2026).

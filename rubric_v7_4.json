@@ -1,6 +1,6 @@
 {
   "version": "v7.4",
-  "generated_at": "2026-05-24 12:55",
+  "generated_at": "2026-05-24 14:52",
   "domains": [
     {
       "id": "D1",
@@ -42,7 +42,7 @@
       "id": "D7",
       "name": "Teacher in the loop + dashboards",
       "max_pts": 11.0,
-      "primary_source": "WB AI Tutor 2024"
+      "primary_source": "WB EdTech 2024"
     },
     {
       "id": "D8",
@@ -54,19 +54,19 @@
       "id": "D9",
       "name": "Memory + confabulation resistance",
       "max_pts": 10.0,
-      "primary_source": "WB AI Tutor 2024 + BEA + NIST RMF"
+      "primary_source": "WB EdTech 2024 + BEA + NIST RMF"
     },
     {
       "id": "D10",
       "name": "Roles, logs, latency, export",
       "max_pts": 4.0,
-      "primary_source": "WB AI Tutor 2024 + NCME"
+      "primary_source": "WB EdTech 2024 + NCME"
     },
     {
       "id": "D11",
       "name": "Intended use specification + adaptation",
       "max_pts": 8.0,
-      "primary_source": "ESSA + WB AI Tutor 2024"
+      "primary_source": "ESSA + WB EdTech 2024"
     },
     {
       "id": "D12",
